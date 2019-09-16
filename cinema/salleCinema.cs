@@ -13,12 +13,14 @@ namespace cinema
         private double prixFilmNormal;
         private int nombrePlacesVenduesNormal;
         private int nombrePlacesVenduesReduit;
+        private int idSalle;
 
-        public salleCinema(string titreFilm, int placesDispo,  int prixUnitaire)
+        public salleCinema(string titreFilm, int placesDispo,  double prixUnitaire, int id)
         {
             this.filmJoue = titreFilm;
             this.nombrePlaces = placesDispo;
             this.prixFilmNormal = prixUnitaire;
+            this.idSalle = id;
             nombrePlacesVenduesNormal = 0;
             nombrePlacesVenduesReduit = 0;
         }
